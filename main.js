@@ -12,10 +12,12 @@ if (runnersAge >= 18 && registeredEarly) {
 }
 
 
-if (runnersAge >= 18 && registeredEarly) {
+if (runnersAge > 18 && registeredEarly) {
     console.log(`Number ${raceNumber} will race at 9:30 am.`);
-} else if (runnersAge >= 18 && !registeredEarly) {
+} else if (runnersAge > 18 && !registeredEarly) {
     console.log('Late adults run at 11:00 am');    
 } else if (runnersAge < 18) {
     console.log('Youth registrants run at 12:30 pm (regardless of registration)');
+} else {
+    console.log('Please see the registration desk');
 }
